@@ -2,10 +2,9 @@ import cv2
 import numpy as np
 
 # Load the pre-trained car detection model
-car_cascade = cv2.CascadeClassifier('haarcascade_car.xml')  # You can replace this with a more accurate model
+car_cascade = cv2.CascadeClassifier('assets/haarcascade_car.xml') 
 
-# Create a video capture object for the default camera (change the index if necessary)
-video_source = "car_-_2165 (Original).mp4"
+video_source = "assets/car_-_2165 (Original).mp4"
 video_capture = cv2.VideoCapture(video_source)
 
 # Define a function to detect and track cars in each frame
@@ -31,6 +30,6 @@ while True:
     if cv2.waitKey(1) & 0xFF == 27:  # Press 'Esc' key to exit
         break
 
-# Release the video capture and close all OpenCV windows
+
 video_capture.release()
 cv2.destroyAllWindows()
