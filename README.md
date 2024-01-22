@@ -7,3 +7,4 @@ pandas,
 opencv-python,
 tensorflow,
 keras.
+![demo](https://github.com/Rajkumar-Gunasekaran/Traffic-Collision-Detection-System/assets/96935976/682ba0fd-e7f6-46bb-964b-3344d38d56eb)
